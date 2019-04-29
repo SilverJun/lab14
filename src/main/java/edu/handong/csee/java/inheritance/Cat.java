@@ -12,9 +12,12 @@ public class Cat extends Animal {
         Cat myCat = new Cat();
         Dog myDog = new Dog();
         Animal myAnimal = myCat;		// polymorphism
-        myAnimal.testInstanceMethod();	// maybe print cat
+        Animal.testClassMethod();	// maybe print class method Animal
+        myAnimal.testInstanceMethod();	// maybe print instance method catance method cat
+        Cat.testClassMethod();	// maybe print class method cat
         myAnimal = myDog;				// polymorphism
-        myAnimal.testInstanceMethod();	// maybe print dog
+        myAnimal.testInstanceMethod();	// maybe print instance method dog
+        Dog.testClassMethod();	// maybe print class method cat
     }
 }
 
